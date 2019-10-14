@@ -18,7 +18,7 @@ body {
   max-width: 1340px;
   margin: auto;
   position: relative;
-  box-shadow: black;
+  box-shadow: 0 0 15px 0 black;
   margin-top: 0;
 }
 
@@ -88,6 +88,14 @@ h1, h4 {
   text-align: center;
 }
 
+.services h4 {
+  opacity: 0.5;
+}
+
+.service-text {
+  opacity: 0.5;
+}
+
 h1 {
   padding-top: 36px;
 }
@@ -108,6 +116,7 @@ i {
 
 .portfolio {
   background-color: #E3E4E4;
+  box-shadow: 0 0 10px 0 black;
 }
 
 .portfolio img {
@@ -126,5 +135,22 @@ i {
 .portfolio h5 {
   opacity: 0.5;
   margin-top: 0;
+}
+
+.portfolio h4 {
+  opacity: 0.5;
+}
+
+footer {
+  padding-top: 36px;
+}
+
+.page-footer i {
+  font-size: 26px;
+  color: black;
+}
+
+.copy {
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
