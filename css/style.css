@@ -4,8 +4,12 @@
   max-width: 1140px;
 }
 
+body {
+  margin-top: 0;
+}
+
 .jumbo {
-  height: 50vh;
+  height: 40vh;
   min-height: 500px;
   background: url("/images/img1.jpg");
   background-size: cover;
@@ -14,12 +18,15 @@
   max-width: 1340px;
   margin: auto;
   position: relative;
+  box-shadow: black;
+  margin-top: 0;
 }
 
 .navbar {
   background-color: transparent;
   position: absolute;
   left: 50%;
+  margin-top: 0;
 }
 
 .navigation {
@@ -37,8 +44,52 @@
   color: #ffffff;
 }
 
+.jumbo h1 {
+  position: absolute;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 40%;
+}
+
+.jumbo h3 {
+  position: absolute;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  left: 42%;
+  right: 0;
+  top: 60%;
+}
+
+button {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 80%;
+  border: 2px #ffffff solid;
+  font-size: 26px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.services {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
 h1, h4 {
   text-align: center;
+}
+
+h1 {
+  padding-top: 36px;
 }
 
 h4 {
@@ -52,5 +103,28 @@ h4 {
 i {
   font-size: 60px;
   padding-bottom: 20px;
+  color: greenyellow;
+}
+
+.portfolio {
+  background-color: #E3E4E4;
+}
+
+.portfolio img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 250px;
+}
+
+.row {
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.portfolio h5 {
+  opacity: 0.5;
+  margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
