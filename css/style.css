@@ -1,0 +1,23 @@
+.container {
+  width: 1140px;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navigation {
+  list-style-type: none;
+  text-align: right;
+}
+
+.navigation li {
+  display: inline;
+  padding: 15px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
