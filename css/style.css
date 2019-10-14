@@ -1,9 +1,25 @@
 .container {
   width: 1140px;
+  margin: auto;
+  max-width: 1140px;
+}
+
+.jumbo {
+  height: 50vh;
+  min-height: 500px;
+  background: url("/images/img1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1340px;
+  margin: auto;
+  position: relative;
 }
 
 .navbar {
-  background-color: black;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
 }
 
 .navigation {
@@ -19,5 +35,22 @@
 .navigation a {
   text-decoration: none;
   color: #ffffff;
+}
+
+h1, h4 {
+  text-align: center;
+}
+
+h4 {
+  padding-bottom: 36px;
+}
+
+.box {
+  text-align: center;
+}
+
+i {
+  font-size: 60px;
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
