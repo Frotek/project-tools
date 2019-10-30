@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>project-tools</title>
-    <link rel="stylesheet" href="vendor/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Signika:700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -13,7 +13,11 @@
 </head>
 <body>
     <header class="jumbo">
-            <nav class="navbar">
+        <nav class="navbar">
+            <div class="brand-name">
+                <a href="#" class="golden">Golden</a>
+            </div>
+            <div class="menu">
                 <ul class="navigation">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">SERVICES</a></li>
@@ -21,17 +25,24 @@
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
-            </nav>
-            <h1>Welcome To Our Studio!</h1>
-            <h3>IT'S NICE TO MEET YOU</h3>
-            <button>Tell me more</button>
+            </div>
+        </nav>
+        <div class="greetings">
+            <div class="welcome">
+                <h2>Welcome To Our Studio!</h2>
+                <h3>IT'S NICE TO MEET YOU</h3>
+            </div>
+            <div class="button-tell">
+                <button>TELL ME MORE</button>
+            </div>
+        </div>
     </header>
     <section class="services">
-            <h1>SERVICES</h1>
-            <h4>Proin iaculis purus consequat sem cure.</h4>
+        <h1>SERVICES</h1>
+        <h4>Proin iaculis purus consequat sem cure.</h4>
         <div class="container">
         <div class="row">
-            <div class="col-md-4 box">
+            <div class="col-md-4 col-sm-12 box">
                 <div><i class="fas fa-shopping-basket"></i></div>
                 <h3>E-Commerce</h3>
                 <span class="service-text">
@@ -41,7 +52,7 @@
                     et quasi architecto beatae vitae dicta sunt explicabo.
                 </span>
             </div>
-            <div class="col-md-4 box">
+            <div class="col-md-4 col-sm-12 box">
                 <div><i class="fas fa-laptop-code"></i></div>
                 <h3>Responsive Web</h3>
                 <span class="service-text">
@@ -51,7 +62,7 @@
                     et quasi architecto beatae vitae dicta sunt explicabo.
                 </span>
             </div>
-            <div class="col-md-4 box">
+            <div class="col-md-4 col-sm-12 box">
                 <div><i class="fas fa-lock"></i></div>
                 <h3>Web Security</h3>
                 <span class="service-text">
@@ -68,34 +79,34 @@
         <h4>Proin iacalis purus consequat sem cure.</h4>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 box">
+                <div class="col-md-4 col-sm-12 box">
                     <img src="images/img2.jpg">
                     <h3>Ebony & Ivory</h3>
                     <h5>Branding</h5>
                 </div>
-                <div class="col-md-4 box">
+                <div class="col-md-4 col-sm-12 box">
                     <img src="images/img2.jpg">
                     <h3>Ebony & Ivory</h3>
                     <h5>Branding</h5>
                 </div>
-                <div class="col-md-4 box">
+                <div class="col-md-4 col-sm-12 box">
                     <img src="images/img2.jpg">
                     <h3>Ebony & Ivory</h3>
                     <h5>Branding</h5>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 box">
+                <div class="col-md-4 col-sm-12 box">
                     <img src="images/img2.jpg">
                     <h3>Ebony & Ivory</h3>
                     <h5>Branding</h5>
                 </div>
-                <div class="col-md-4 box">
+                <div class="col-md-4 col-sm-12 box">
                     <img src="images/img2.jpg">
                     <h3>Ebony & Ivory</h3>
                     <h5>Branding</h5>
                 </div>
-                <div class="col-md-4 box">
+                <div class="col-md-4 col-sm-12 box">
                     <img src="images/img2.jpg">
                     <h3>Ebony & Ivory</h3>
                     <h5>Branding</h5>
@@ -106,8 +117,8 @@
     <footer class="page-footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 box">
-                    <span class="copy">Copyright 2014 FreebiesXpress.com</span>
+                <div class="col-md-4 col-sm-12 box copy-box">
+                    <p class="copy">Copyright 2014 FreebiesXpress.com</p>
                 </div>
                 <div class="col-md-4 box">
                     <ul>

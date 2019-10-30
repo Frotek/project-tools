@@ -4,29 +4,70 @@
     max-width: 1140px;
 }
 body {
-    margin-top: 0;
+    padding: 0;
+    margin: 0;
+}
+.jumbo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    z-index: 0;
 }
 .jumbo {
-    height: 40vh;
+    height: 80vh;
     min-height: 500px;
     background-color: black;
     background: url("/images/Background_Image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 1340px;
+    max-width: 100%;
     margin: auto;
     position: relative;
     margin-top: 0;
+}
+.jumbo > * {
+    z-index: 10;
+    position: relative
+}
 .navbar {
     background-color: transparent;
-    position: absolute;
-    left: 50%;
-    margin-top: 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.brand-name {
+    flex: 1 0 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.golden {
+    color: #fed136;
+    text-decoration: none;
+    font-family: Pinyon Script;
+    font-size: 40px;
+    text-decoration: none;
+}
+.menu {
+    flex: 1 0 50%;
+    padding-top: 30px;
 }
 .navigation {
     list-style-type: none;
-    text-align: right;
+    text-align: center;
+    padding-left: 40px;
     li {
         display: inline;
         padding: 15px;
@@ -35,58 +76,93 @@ body {
         text-decoration: none;
         color: #ffffff;
         font-family: Montserrat;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 14px;
     }
 }
-.jumbo h1 {
-    position: absolute;
-    color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 40%;
+.greetings {
+    display: flex;
+    flex-direction: column;
+    padding-top: 250px;
 }
-.jumbo h3 {
-    position: absolute;
+.welcome {
+    flex: 1 0 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button-tell {
+    flex: 1 0 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+.greetings h2 {
+    color: #ffffff;
+    font-family: Roboto Slab;
+    font-style: italic;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    text-align: center;
+}
+.greetings h3 {
     color: #ffffff;
     margin-left: auto;
     margin-right: auto;
-    left: 42%;
-    right: 0;
-    top: 60%;
+    font-family: Montserrat;
+    font-size: 75px;
+    font-weight: 700;
+    padding: 0;
+    text-align: center;
 }
 button {
-    position: absolute;
     margin-left: auto;
     margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 80%;
-    border: 2px #ffffff solid;
-    font-size: 26px;
-    border-radius: 8px;
-    background-color: transparent;
+    border: 2px #fed136 solid;
+    font-size: 15px;
+    border-radius: 2px;
+    background-color: #fed136;
     color: #ffffff;
     padding: 15px;
+    font-family: Montserrat;
+    font-weight: 700;
 }
 .services {
     padding-top: 36px;
     padding-bottom: 36px;
 }
-h1, h4 {
+.services h1 {
     text-align: center;
+    font-size: 40px;
+    font-family: Montserrat;
+    color: #222222;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    line-height: 45px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .services h3 {
     color: #222222;
+    text-align: center;
+    font-family: Montserrat;
 }
 .services h4 {
     opacity: 0.5;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 20px;
+    font-family: Roboto Slab;
 }
 .service-text {
     opacity: 0.5;
     font-family: "Roboto Slab";
+    font-size: 14px;
 }
 h1 {
     padding-top: 36px;
@@ -97,8 +173,8 @@ h4 {
 .box {
     text-align: center;
 }
-i {
-    font-size: 20px;
+.services i {
+    font-size: 25px;
     padding: 15px;
     color:#fed136;
     border: 3px solid #fed136;
@@ -106,42 +182,139 @@ i {
 }
 .portfolio {
     background-color: #f7f7f7;
+    padding-bottom: 96px;
 }
-.portfolio img {
-    object-fit: cover;
-    max-width: 250px;
-}
-.row {
-    justify-content: center;
-    align-content: center;
-    }
-.portfolio h5 {
-    opacity: 0.5;
-    margin-top: 0;
+.portfolio h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Montserrat;
+    color: #222222;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    line-height: 45px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 90px;
 }
 .portfolio h4 {
     opacity: 0.5;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 20px;
+    font-family: Roboto Slab;
+}
+.portfolio img {
+    object-fit: cover;
+    max-width: 350px;
+    padding: 0;
+    margin: 0;
+}
+.row {
+    padding-top: 30px;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 36px;
+    justify-content: space-between;
+}
+.portfolio .box {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    max-width: 350px;
+}
+.portfolio h3 {
+    max-width: 350px;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.portfolio h5 {
+    opacity: 0.5;
+    margin-top: 0;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer {
-    padding-top: 36px;
+    padding-top: 26px;
+}
+.copy-box {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 350px;
 }
 .page-footer ul {
     list-style-type: none;
+    padding-top: 0;
 }
 .page-footer ul li {
     display: inline-block;
-    
+    padding: 8px;
+    padding-top: 0;
 }
 .page-footer i {
     font-size: 18px;
     color: #ffffff;
     background-color: #222222;
     border: 1px solid #222222;
-    padding: 8px;
-    border-radius: 30px;
+    padding: 10px;
+    border-radius: 50%;
 }
 .copy {
     font-size: 14px;
     color: #555555;
     font-family: Montserrat;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+    .row {
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .greetings h2 {
+        font-size: 20px;
+    }
+    .greetings h3 {
+        font-size: 36px;
+    }
+    .col-sm-12 {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 0 auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 400px;
+    }
+    .portfolio h1 {
+        font-size: 20px;
+    }
+    .portfolio h4 {
+        font-size: 10px;
+    }
+    .services h1 {
+        font-size: 20px;
+    }
+    .services h4 {
+        font-size: 10px;
+    }
+    .services h3 {
+        font-size: 15px;
+    }
 }
